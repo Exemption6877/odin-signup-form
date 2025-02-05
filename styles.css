@@ -7,12 +7,70 @@ https://unsplash.com/photos/a-large-glacier-with-mountains-in-the-background-xbT
   src: url(./font/Norse-Bold.otf);
 }
 
+:root {
+  --main-color: #f9fafb;
+  --secondary-color: #ffffff;
+  --bg-image: url(./img/mountains.jpg);
+}
+
 html {
+  display: flex;
+  height: 100vh;
   padding: 0;
   margin: 0;
   background-color: antiquewhite;
 }
 
-* {
-  font-family: "Norse Bold";
+fieldset {
+  border: 0;
+}
+
+body {
+  display: flex;
+  gap: 32px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.outside,
+.focus,
+.bg-img,
+.form {
+  flex-direction: column;
+}
+
+.focus {
+  background-color: var(--secondary-color);
+}
+
+#odin {
+  height: 10vh;
+  width: auto;
+}
+
+.bg-img {
+  background-image: var(--bg-image);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  align-items: center;
+}
+
+.transparent {
+  display: flex;
+  background-color: black;
+  opacity: 40%;
+  justify-content: center;
+}
+
+.transparent > h1 {
+  color: white;
+}
+
+.right {
+  flex-direction: column;
 }
