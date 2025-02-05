@@ -1,8 +1,18 @@
 /* 
 bg photo: 
 https://unsplash.com/photos/a-large-glacier-with-mountains-in-the-background-xbTP4kIaUa8 */
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url(./font/Norse-Bold.otf);
+}
+
 html {
   padding: 0;
   margin: 0;
   background-color: antiquewhite;
+}
+
+* {
+  font-family: "Norse Bold";
 }
