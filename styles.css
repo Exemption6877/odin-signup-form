@@ -26,6 +26,8 @@ fieldset {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 32px;
 }
@@ -38,13 +40,9 @@ body {
 
 .outside,
 .focus,
-.bg-img,
+.left,
 .form {
   flex-direction: column;
-}
-
-.focus {
-  background-color: var(--secondary-color);
 }
 
 #odin {
@@ -52,25 +50,43 @@ body {
   width: auto;
 }
 
-.bg-img {
+.left {
+  position: relative;
   background-image: var(--bg-image);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  width: 50vh;
   align-items: center;
+  justify-content: center;
 }
 
 .transparent {
   display: flex;
+  position: absolute;
+  top: 30vh;
   background-color: black;
   opacity: 40%;
+  width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 .transparent > h1 {
+  font-family: "Norse Bold";
   color: white;
+}
+
+.left > p {
+  position: absolute;
+  justify-self: flex-end;
+  bottom: 1vh;
 }
 
 .right {
   flex-direction: column;
+}
+
+.focus {
+  background-color: var(--secondary-color);
+  padding: 1rem;
 }
