@@ -6,5 +6,62 @@
     <link href="./styles.css" rel="stylesheet" />
     <title>Sign Up</title>
   </head>
-  <body></body>
+  <body>
+    <div class="bg-img">
+      <div class="transparent">
+        <img src="./img/odin-lined.png" alt="Odin Logo" />
+        <h1>Odin</h1>
+
+        <p>Photo by <a href="">Author</a> on <a href="">Unsplash</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="outside container">
+        <p>
+          This is not a real online service! You know you need something <br />
+          like this in your life to help you realize your deepest dreams.<br />
+          Sign up <i>now</i> to get started.
+        </p>
+        <p>You <i>know</i> you want to</p>
+      </div>
+
+      <div class="form container">
+        <h2>Let's Do This!</h2>
+        <form action="" method="post">
+          <div class="focus container">
+            <fieldset>
+              <label for="fname">First Name</label>
+              <input type="text" name="fname" id="fname" />
+              <label for="lname">Last Name</label>
+              <input type="text" name="lname" id="lname" />
+            </fieldset>
+
+            <fieldset>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" />
+            </fieldset>
+
+            <fieldset>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+            </fieldset>
+          </div>
+
+          <div class="outside container">
+            <input type="submit" value="Create Account" />
+            <p>Already have an account? <a href="">Log in</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
